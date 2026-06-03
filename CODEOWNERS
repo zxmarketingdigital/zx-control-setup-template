@@ -1,8 +1,8 @@
-# Todo PR precisa da aprovação do dono do código antes do merge.
-# IMPORTANTE: troque @SEU-USUARIO-GITHUB pelo handle PESSOAL do Rafael no GitHub
-# (não o da organização). Ex.: @rafaelcastro
-#
+# Todo PR precisa da aprovação do dono do código (@zxmarketingdigital) antes do merge.
 # A pasta .github/ tem proteção extra: só o dono mexe em workflows.
+#
+# OBS: a aprovação só é real se o AUTOR do PR for uma conta DIFERENTE de
+# @zxmarketingdigital. O colaborador deve usar a conta GitHub dele próprio.
 
-*                 @SEU-USUARIO-GITHUB
-/.github/         @SEU-USUARIO-GITHUB
+*                 @zxmarketingdigital
+/.github/         @zxmarketingdigital
