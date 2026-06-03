@@ -18,21 +18,21 @@ Pronto. Agora você nunca mais precisa repetir isso.
 
 ## Criar um Setup NOVO
 
-1. Vá em **https://github.com/zxmarketingdigital/zx-control-setup-template**
-2. Clique no botão verde **"Use this template"** → **"Create a new repository"**.
-3. No nome, escreva: `zx-control-setup` + o número + um nome curto.
-   Ex.: `zx-control-setup10-agente-instagram`. Deixe marcado **Public**. Clique em criar.
-4. Volte no **claude.ai/code**, abra esse repositório novo que você acabou de criar.
-5. Escreva pro Claude, em português, algo como:
+> O **Rafael** cria o repositório novo pra você (leva 30 segundos e já deixa tudo
+> protegido). Ele te manda o link. Você começa direto no passo 2.
+
+1. _(Rafael)_ Cria o repo a partir do template e roda o bootstrap de proteções.
+2. Abra o **claude.ai/code** e abra o repositório que o Rafael te mandou.
+3. Escreva pro Claude, em português, algo como:
 
    > "Vamos criar o Setup 10 do ZX Control sobre **[tema que o Rafael passou]**.
    > Leia o CLAUDE.md e o setup.config.json e me conduza."
 
-6. O Claude vai te fazer algumas perguntas e montar tudo. **Deixe ele trabalhar.**
-7. Quando ele terminar, peça: **"valida o setup"**. Ele roda a checagem e corrige o que
+4. O Claude vai te fazer algumas perguntas e montar tudo. **Deixe ele trabalhar.**
+5. Quando ele terminar, peça: **"valida o setup"**. Ele roda a checagem e corrige o que
    precisar.
-8. Por fim, peça: **"abre o Pull Request"**. Ele cria o pedido de revisão.
-9. **Avise o Rafael** que o PR está pronto (WhatsApp/onde vocês falam).
+6. Por fim, peça: **"abre o Pull Request"**. Ele cria o pedido de revisão.
+7. **Avise o Rafael** que o PR está pronto (WhatsApp/onde vocês falam).
 
 É isso. O Rafael revisa, aprova e publica pros alunos. Você **não publica nada** — sua
 parte termina no Pull Request.
