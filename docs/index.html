@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Setup ZX Control — Dashboard</title>
+  <style>
+    :root { --bg:#0a0a0a; --card:#161616; --border:#262626; --amber:#D97706; --text:#e5e5e5; --muted:#a3a3a3; }
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body { background:var(--bg); color:var(--text); font-family:Inter,system-ui,sans-serif; padding:32px; }
+    h1 { font-size:20px; margin-bottom:4px; }
+    .sub { color:var(--muted); font-size:13px; margin-bottom:24px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:16px; }
+    .card { background:var(--card); border:1px solid var(--border); border-radius:12px; padding:20px; }
+    .stat { font-size:28px; font-weight:700; color:var(--amber); font-family:'JetBrains Mono',monospace; }
+    .label { color:var(--muted); font-size:12px; text-transform:uppercase; letter-spacing:.04em; margin-top:6px; }
+  </style>
+</head>
+<body>
+  <h1>Dashboard do Setup</h1>
+  <div class="sub">Dados carregados localmente (sem internet). Personalize para o seu setup.</div>
+  <div class="grid" id="cards"></div>
+
+  <script>
+    // REGRA: dados sempre INLINE — nunca fetch() (dashboard abre via file:// e quebra com CORS).
+    const _DATA = {
+      stats: [
+        { label: "Exemplo A", valor: "0" },
+        { label: "Exemplo B", valor: "0" },
+        { label: "Exemplo C", valor: "0" }
+      ]
+    };
+
+    const cards = document.getElementById("cards");
+    _DATA.stats.forEach(function (s) {
+      const el = document.createElement("div");
+      el.className = "card";
+      el.innerHTML = '<div class="stat">' + s.valor + '</div><div class="label">' + s.label + '</div>';
+      cards.appendChild(el);
+    });
+  </script>
+</body>
+</html>

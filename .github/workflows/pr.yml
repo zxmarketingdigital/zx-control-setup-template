@@ -1,0 +1,19 @@
+name: Validar Setup
+
+# Roda em todo Pull Request e em push na main.
+# Usa `pull_request` (NUNCA `pull_request_target`) — sem acesso a secrets,
+# seguro contra PRs maliciosos.
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Rodar as 12 regras do ZX Control
+        uses: zxmarketingdigital/setup-ci@v1

@@ -1,0 +1,12 @@
+{
+  "_instrucoes": "Preencha os campos abaixo com os dados que o Rafael passou. O Claude usa isto para personalizar o setup. Apague este campo _instrucoes depois.",
+  "setup_number": 0,
+  "slug": "tema-do-setup-em-kebab-case",
+  "tema_titulo": "Título Humano do Setup",
+  "tema_descricao_curta": "uma frase do que o aluno vai conseguir fazer",
+  "versao_nome": "Scale",
+  "paleta": {
+    "primary": "#D97706",
+    "secondary": "#F59E0B"
+  }
+}

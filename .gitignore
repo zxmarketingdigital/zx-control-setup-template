@@ -1,0 +1,20 @@
+# Segredos — NUNCA commitar
+.env
+*.env
+!.env.example
+*credentials*
+*secrets*
+*.key
+*.pem
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS
+.DS_Store
+
+# Node
+node_modules/
