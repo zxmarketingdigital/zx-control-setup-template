@@ -11,7 +11,7 @@ _(O Claude preenche esta seção com o resultado concreto do setup — em benef�
 ## Como começar
 
 ```bash
-gh repo clone zxmarketingdigital/zx-control-setup{N}-{slug}
+git clone https://github.com/zxmarketingdigital/zx-control-setup{N}-{slug}.git
 cd zx-control-setup{N}-{slug}
 claude
 ```
